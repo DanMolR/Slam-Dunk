@@ -23,8 +23,7 @@ body {
 
 .SD-Logo {
   display: inline-block;
-  max-width: 30%;
-  height: auto;
+  width: 250px;
   margin: 15px;
   vertical-align: middle;
 }
@@ -45,49 +44,64 @@ body {
   font-weight:500;
   background-color:crimson;
   border: solid 6px crimson;
+  font-weight: bold;
 }
 
 .header nav ul li a:hover {
   color:tomato;
   text-decoration: underline;
-  font-weight: bold;
   background-color: #2a2a2a;
   border: none
   ;
 }
 
 /* ESTILOS AL CUERPO DE LA PÁGINA */
-#about {
-  padding: 80px 20px;
-}
 
+main {
+  text-align: center;
+}
+#about {
+  padding: 80px 20px 20px;
+}
 #about p {
   text-align: justify;
+  width:min(1000px, 100%);
+  margin-left: auto;
+  margin-right: auto;
 }
-
 #about img {
-  display: inline-block;
   max-width: 100%;
   height: auto;
   margin-top: 30px;
   /* max-width asegura que la imagen no crezca más de su resolución */
   text-align: center;
+  border: solid 2px ;
 }
 .gallery {
-  padding: 40px 20px;
   text-align: center;
+  margin-bottom: 50px;
 }
-.gallery h2 {color: crimson;}
-.gallery img {
+.gallery h2 {
+  color: crimson;
+  margin-bottom: 15px;
+}
+.gallery div.cajas {
   display: inline-block;
+}
+.gallery img {
   width: auto;
   height: 500px;
-  margin: 5px;
+  margin: 5px 10px 0px;
   border: double 6px gray;
   box-shadow: 0px 6px 5px lightgray;
   opacity: 0.80;
 }
-
+.gallery p {
+  padding: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 .gallery img:hover {
   border: solid 6px red;
   opacity: 1;
